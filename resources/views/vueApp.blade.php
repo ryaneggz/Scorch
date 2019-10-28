@@ -19,7 +19,7 @@
   </head>
 <body>
   <div class="container">
-    Tickets Vue
+    <h3>This is the VueApp Blade</h3>
   </div>
 
   <!-- VUE APP -->

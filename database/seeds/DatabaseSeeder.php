@@ -35,5 +35,9 @@ class DatabaseSeeder extends Seeder
         $x->user_id = "1";
         $x->save();
 
+        $x = new App\Ticket;
+        $x->title = "This is Title ONE";
+        $x->body = "This is BODY of Title ONE";
+        $x->save();
     }
 }
