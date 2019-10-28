@@ -3,9 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Ticket;
 
 class TicketsController extends Controller
 {
+    public function home()
+    {
+        return view('vueApp');
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +20,7 @@ class TicketsController extends Controller
      */
     public function index()
     {
-        //
+        return Ticket::orderBy('id', 'DESC')->get();
     }
 
     /**
