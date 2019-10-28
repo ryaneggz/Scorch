@@ -36,4 +36,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // Owner belongs to this User
+    public function Owner()
+    {
+        return $this->belongsTo('App\Owner');
+    }
 }
